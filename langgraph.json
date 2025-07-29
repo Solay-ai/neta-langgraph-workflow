@@ -1,0 +1,17 @@
+{
+  "dependencies": [
+    "langgraph>=0.2.0",
+    "langchain-openai>=0.3.0",
+    "langchain-core>=0.3.0",
+    "python-dotenv>=1.0.0"
+  ],
+  "graphs": {
+    "neta-social-assistant": {
+      "path": "./neta_social_assistant.py:app",
+      "description": "Neta AI Marketing Freelancer for social media automation and guidance",
+      "interrupt_before": [],
+      "interrupt_after": []
+    }
+  },
+  "env": ".env"
+}

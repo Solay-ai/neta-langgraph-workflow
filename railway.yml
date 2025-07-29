@@ -1,0 +1,25 @@
+# Railway.app deployment configuration
+# Free tier: 500 hours/month + $5 credit
+
+version: 2
+
+services:
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    variables:
+      LANGSMITH_API_KEY: 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
+      POSTGRES_URI: ${{ POSTGRES_URL }}
+      REDIS_URI: ${{ REDIS_URL }}
+    start: python -m langgraph up --host 0.0.0.0 --port $PORT
+
+  postgres:
+    image: postgres:15
+    variables:
+      POSTGRES_DB: langgraph
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: ${{ secret.POSTGRES_PASSWORD }}
+
+  redis:
+    image: redis:7
