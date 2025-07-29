@@ -1,5 +1,9 @@
 # Neta Social Assistant - LangGraph Workflow
 
+[![GitHub](https://img.shields.io/badge/GitHub-Solay--ai%2Fneta--langgraph--workflow-blue?logo=github)](https://github.com/Solay-ai/neta-langgraph-workflow)
+[![LangGraph](https://img.shields.io/badge/LangGraph-Cloud%20Ready-green?logo=python)](https://langchain-ai.github.io/langgraph/)
+[![License](https://img.shields.io/badge/License-Private-red)](https://github.com/Solay-ai/neta-langgraph-workflow)
+
 ## Overview
 AI Marketing Freelancer for social media automation and guidance. This workflow provides a complete conversational experience for small business owners to discover their social presence, analyze content, and get content strategy.
 
